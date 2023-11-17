@@ -192,16 +192,13 @@ class MyApp extends StatelessWidget {
                   child: Image.asset("assets/images/mainlogo.png", width: 120),
                 ),
                 //küçük bir imza
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Text(
-                        "GKHNKNDL Version",
-                        style: TextStyle(color: Colors.black54, fontSize: 10),
-                      )
-                    ],
-                  ),
+                Row(
+                  children: [
+                    Text(
+                      "GKHNKNDL Version",
+                      style: TextStyle(color: Colors.black54, fontSize: 10),
+                    )
+                  ],
                 ),
                 //right icon side
                 Row(
@@ -275,15 +272,15 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Icon(Icons.home,
-                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                    size: 35, color: const Color.fromARGB(221, 22, 22, 22)),
                 Icon(Icons.search_rounded,
-                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                    size: 35, color: const Color.fromARGB(221, 22, 22, 22)),
                 Icon(Icons.smart_display,
-                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                    size: 35, color: const Color.fromARGB(221, 22, 22, 22)),
                 Icon(Icons.favorite,
-                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                    size: 35, color: const Color.fromARGB(221, 22, 22, 22)),
                 Icon(Icons.person,
-                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                    size: 35, color: const Color.fromARGB(221, 22, 22, 22)),
               ],
             ),
           ),
