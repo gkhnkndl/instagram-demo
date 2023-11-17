@@ -192,13 +192,16 @@ class MyApp extends StatelessWidget {
                   child: Image.asset("assets/images/mainlogo.png", width: 120),
                 ),
                 //küçük bir imza
-                Row(
-                  children: [
-                    Text(
-                      "Gökhan Kundala Version",
-                      style: TextStyle(color: Colors.black54, fontSize: 12),
-                    )
-                  ],
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Text(
+                        "GKHNKNDL Version",
+                        style: TextStyle(color: Colors.black54, fontSize: 10),
+                      )
+                    ],
+                  ),
                 ),
                 //right icon side
                 Row(
@@ -262,20 +265,25 @@ class MyApp extends StatelessWidget {
           //bottom bar
           Container(
             width: double.infinity,
-            height: 50,
+            height: 60,
             decoration: BoxDecoration(
-              color: Colors.black12,
-              border: Border.all(color: const Color.fromARGB(12, 0, 0, 0)),
+              color: Colors.white,
+              border: Border.all(color: Color.fromARGB(50, 0, 0, 0)),
             ),
             //bottom menu logos
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Icon(Icons.home, size: 50, color: Colors.black87),
-                Icon(Icons.search_rounded, size: 50, color: Colors.black87),
-                Icon(Icons.smart_display, size: 50, color: Colors.black87),
-                Icon(Icons.favorite, size: 50, color: Colors.black87),
-                Icon(Icons.person, size: 50, color: Colors.black87),
+                Icon(Icons.home,
+                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                Icon(Icons.search_rounded,
+                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                Icon(Icons.smart_display,
+                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                Icon(Icons.favorite,
+                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
+                Icon(Icons.person,
+                    size: 40, color: const Color.fromARGB(221, 22, 22, 22)),
               ],
             ),
           ),
